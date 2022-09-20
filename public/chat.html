@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="chat.css" />
+    <title>Chat Room</title>
+  </head>
+  <body>
+    <div class="app__chat">
+      <div class="app__chat-header">
+        <div class="app__header-logo">
+          <span>Chat Chord</span>
+        </div>
+        <div class="app__header-button">
+          <button class="custom__button">
+            <a href="index.html">leave room</a>
+          </button>
+          <a href="index.html">
+            <i class="fa fa-sign-out" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+      <div class="app__wrapper">
+        <div class="app__chat-content">
+          <h2 class="head-text">Room name</h2>
+          <h4 id="room__name"></h4>
+          <h2 class="head-text">Users</h2>
+          <div class="app__chat-content_overflow">
+            <ul class="app__chat-users" id="users"></ul>
+          </div>
+        </div>
+        <div class="app__chat-messages">
+          <div class="app__chat-message_overflow" id="messages"></div>
+          <form class="app__chat-input" id="chat__input">
+            <input id="msg" type="text" placeholder="message..." />
+            <button class="custom__button">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i> Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

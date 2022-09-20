@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+  padding: 0px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif !important;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+.app__chat {
+  min-height: 100vh;
+  background-image: url('https://fsa.zobj.net/crop.php?r=D-dI-wXmGs4kFW2PNPRA5YL-4pwp8WB9pPVWMXvyBhXYkHtKXs3P2vTr_dCIV0aXxM0-BKz8n6yW3XipImjqD92MaRMGkzO77AGgk8DO3hQsBhlLh0HGRpjIr24TvVwC9T1XFnsgxvXRuEq2jtDMiU1ycV1-o6-g-DVv2s5-0MJC2X1ILnt8kn6mcZy4vKocddKixDKutJdTr1OT');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.app__chat-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  background-color: #1d2e36d6;
+  align-items: center;
+}
+.app__header-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.app__header-logo span {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #fff;
+}
+.app__header-button i {
+  display: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.custom__button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  text-transform: capitalize;
+  background-color: #2b9833;
+  color: #fff;
+  cursor: pointer;
+}
+.app__wrapper {
+  display: flex;
+  height: 91vh;
+}
+.app__chat-content {
+  padding: 20px;
+  background-color: #1a2b33bf;
+}
+.app__chat-content h4 {
+  margin: 5px 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.head-text {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.app__chat-content_overflow {
+  overflow-y: auto;
+}
+.app__chat-users {
+  list-style: none;
+  padding: 0;
+}
+.app__chat-users li {
+  font-size: 18px;
+  color: #fff;
+  margin: 5px 0;
+  text-transform: capitalize;
+}
+.app__chat-messages {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.app__chat-message_overflow {
+  height: 90%;
+  overflow-y: auto;
+}
+.app__chat-input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.app__chat-input input {
+  padding: 18px;
+  border: none;
+  border-radius: 10px;
+  width: 83%;
+  outline: none;
+}
+.app__chat-input button {
+  padding: 10px 20px;
+}
+.message {
+  background-color: #2b9833;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 20px 0;
+}
+.message p:first-child {
+  margin: 5px 0;
+}
+.message p:last-child {
+  margin: 0;
+}
+@media screen and (max-width: 1200px) {
+  .app__chat-input input {
+    padding: 12px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .app__chat-input input {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .app__chat-content {
+    display: none;
+  }
+  .app__chat-input input {
+    width: 63%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .app__chat-header {
+    padding: 0.5rem;
+  }
+  .app__chat-input input {
+    width: 59%;
+  }
+  .app__header-button button {
+    display: none;
+  }
+  .app__header-button i {
+    display: block;
+  }
+}

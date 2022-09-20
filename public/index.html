@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Chat Room</title>
+  </head>
+  <body>
+    <div class="app__wrapper">
+      <div class="app__wrapper-form">
+        <div class="form__logo">
+          <i class="fa fa-comments" aria-hidden="true"></i>
+        </div>
+
+        <form action="../chat.html">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            placeholder="Enter your name..."
+            name="username"
+            required
+          />
+          <label for="room">Room</label>
+          <select required name="room">
+            <option value="frontend">Front-End Developer</option>
+            <option value="animation">Animation</option>
+            <option value="web-designers">Web Designer</option>
+            <option value="backend">Back-End Developer</option>
+            <option value="fullstack">Full-Stack Developer</option>
+          </select>
+          <button type="submit" class="custom__button">Join Room</button>
+        </form>
+      </div>
+      <div class="app__wrapper-banner">
+        <div class="banner__img">
+          <img src="../assets/chat_room.png" alt="chat img" />
+        </div>
+        <div class="app__wrapper-banner_info">
+          <span><em>Lorem ipsum dolor sit amet.</em></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

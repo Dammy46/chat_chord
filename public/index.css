@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif !important;
+}
+.app__wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.app__wrapper-form {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.75rem 0 1.75rem;
+  background-color: #191a19;
+}
+.app__wrapper-form_logo {
+  margin: 2rem;
+}
+.form__logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #2b9833;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form__logo i {
+  font-size: 45px;
+  color: #fff;
+}
+.app__wrapper-form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.app__wrapper-form form input,
+.app__wrapper-form form select {
+  height: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+  background: #000;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.app__wrapper-form form select {
+  height: 50px;
+}
+.custom__button {
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  background-color: #2b9833;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25rem;
+}
+.app__wrapper-banner {
+  height: 100vh;
+  background: #2b9833;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.banner__img {
+  width: 640px;
+  height: 500px;
+}
+.banner__img img {
+  width: 100%;
+  height: 100%;
+}
+.app__wrapper-banner_info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.app__wrapper-banner_info span {
+  color: #ffffff7a;
+  font-weight: 400;
+}
+label {
+  margin: 10px 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 900px) {
+  .banner__img {
+    width: 450px;
+    height: 470px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .app__wrapper-banner {
+    display: none;
+  }
+}
